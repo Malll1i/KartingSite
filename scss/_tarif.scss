@@ -1,0 +1,472 @@
+.tarif {
+    padding-bottom: 60px;
+
+    &-sec {
+        padding: 100px 0 92px;
+
+        @include media(1100) {
+            padding: 80px 0 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 48px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60px;
+
+        @include media(1100) {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        @include media(576) {
+            font-size: 24px;
+        }
+
+        br {
+            display: none;
+
+            @include media(1100) {
+                display: block;
+            }
+
+            @include media(576) {
+                display: none;
+            }
+        }
+
+        span:nth-child(2) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            filter: blur(10px);
+        }
+    }
+
+    .swiper {
+        width: 100%;
+
+        @include media(1100) {
+            width: 300px;
+            overflow: visible;
+        }
+
+        &-wrapper {
+            @include media(1100) {
+                align-items: stretch;
+            }
+        }
+
+        &-slide {
+            @include media(1100) {
+                height: auto;
+            }
+
+            @include media(-1100) {
+                &:not(.swiper-slide-active) {
+                    height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &__card {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        height: 639px;
+
+        @include media(1100) {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        &_left {
+            width: calc(100% - 453px);
+            border: 5px solid transparent;
+            border-image: linear-gradient(90deg, #F4B5EF, #20EBFC) 1;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 55px;
+            
+            @include media(-1100) {
+                border-right: 0;
+            }
+
+            @include media(1100) {
+                width: 100%;
+                border-bottom: 0;
+                border-width: 4px;
+                padding: 36px 0;
+            }
+
+            .bg-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .main-img {
+                position: absolute;
+                bottom: 0;
+                right: 27px;
+                z-index: -1;
+
+                @include media(1100) {
+                    display: none;
+                }
+            }
+
+            h4 {
+                font-size: 48px;
+                margin-bottom: 15px;
+                line-height: 100%;
+
+                @include media(1100) {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            h3 {
+                font-size: 48px;
+                font-family: $font-neoneon;
+                margin-bottom: 10px;
+                line-height: 100%;
+
+                @include media(1100) {
+                    font-size: 24px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 23px;
+                line-height: 100%;
+
+                @include media(1100) {
+                    display: none;
+                }
+            }
+
+            ul {
+                width: 100%;
+                padding-left: 159px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                @include media(1100) {
+                    width: 100%;
+                    padding: 0 !important;
+                    align-items: center !important;
+                    text-align: center;
+                }
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    line-height: 100%;
+
+                    @include media(1100) {
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    line-height: 100%;
+                }
+
+                h3 {
+                    font-size: 36px;
+                    font-family: $font-rostov;
+                    margin-bottom: 10px;
+                    line-height: 100%;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .swp_btn {
+                @include media(1100) {
+                    display: none;
+                }
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &__prev {
+                    left: 45px;
+                }
+
+                &__next {
+                    right: 45px;
+                }
+            }
+        }
+        
+        &_right {
+            border: 5px solid transparent;
+            border-image: linear-gradient(90deg, #F4B5EF, #20EBFC) 1;
+            width: 453px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 55px 0;
+
+            @include media(1100) {
+                width: 100%;
+                border-width: 4px;
+                min-height: 400px;
+                padding: 36px 16px;
+                justify-content: flex-end;
+                gap: 15px;
+            }
+
+            h3 {
+                font-size: 36px;
+
+                @include media(1100) {
+                    display: none;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 20px;
+                font-family: $font-montserrat;
+
+                @include media(1100) {
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
+                    li {
+                        width: 100%;
+                    }
+                }
+
+                .text-yellow {
+                    color: #F9E42E;
+                }
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 302px;
+
+                @include media(1100) {
+                    width: 100%;
+                    gap: 15px;
+                }
+
+                a {
+                    width: 100%;
+                }
+
+                .btn_yellow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 44px;
+                    border: 1px solid #F9E42E;
+                    color: #F9E42E;
+                    font-size: 36px;
+                    position: relative;
+                    z-index: 1;
+
+                    @include media(1100) {
+                        font-size: 24px;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        left: -1px;
+                        top: -1px;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #F9E42E;
+                        filter: blur(5px);
+                    }
+                }
+            }
+        }
+        
+        &.text-right {
+            .tarif__card_left {
+                ul {
+                    align-items: flex-end;
+                    padding: 0 159px 0 0;
+                }
+    
+                .main-img {
+                    right: auto;
+                    left: 222px;
+                    bottom: 8px;
+                }
+            }
+        }
+
+        &-2 {
+            .tarif__card {
+                &_left {
+                    @include media(1100) {
+                        padding: 46px 0 50px;
+                    }
+
+                    .main-img {
+                        right: auto;
+                        left: 50%;
+                        bottom: 28px;
+                        transform: translateX(-50%);
+                    }
+
+                    .price {
+                        display: none;
+
+                        @include media(1100) {
+                            display: block;
+                        }
+
+                        h3 {
+                            font-size: 36px;
+                            margin-bottom: 10px;
+                            font-family: $font-rostov;
+                            line-height: 100%;
+                        }
+
+                        h4 {
+                            font-size: 16px;
+                            margin-bottom: 0;
+                            line-height: 100%;
+                        }
+                    }
+                }
+
+                &_right {
+                    position: relative;
+                    z-index: 1;
+
+                    @include media(1100) {
+                        min-height: 400px;
+                        justify-content: space-between;
+                    }
+
+                    .main-img {
+                        display: none;
+                        position: absolute;
+                        top: 73px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: -1;
+
+                        @include media(1100) {
+                            display: block;
+                            width: 164px;
+                        }
+                    }
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        p {
+                            font-family: $font-montserrat;
+                            font-size: 20px;
+                            margin-bottom: 3px;
+                        }
+
+                        h3 {
+                            font-size: 36px;
+                            margin-bottom: 28px;
+
+                            @include media(1100) {
+                                display: none;
+                            }
+                        }
+
+                        h4 {
+                            font-family: $font-montserrat;
+                            font-size: 20px;
+
+                            @include media(1100) {
+                                display: none;
+                            }
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.card-3 {
+            .tarif__card {
+                &_left {
+                    h5 {
+                        margin-bottom: 38px;
+                    }
+
+                    .main-img {
+                        right: 91px;
+                    }
+                }
+            }
+        }
+
+        &.card-4 {
+            .tarif__card {
+                &_left {
+                    h5 {
+                        margin-bottom: 38px;
+                    }
+
+                    .main-img {
+                        left: 130px;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

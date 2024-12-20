@@ -1,0 +1,36 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Rostov';
+    src: url(../fonts/rostov.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Neoneon';
+    src: url(../fonts/Neoneon.otf);
+    font-weight: 400;
+}
+
+$font-rostov: 'Rostov', sans-serif;
+$font-neoneon: 'Neoneon', sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+// Fonts end
+
+// Colors
+$color-fuschia-60: #FCDDEC;
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}

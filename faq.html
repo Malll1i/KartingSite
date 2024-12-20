@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./scss/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__in">
+                <div class="container header__container">
+                    <ul class="header__navs">
+                        <li>
+                            <a href="#" class="header__navs_link" id="events-link">Мероприятия</a>
+
+                        </li>
+                        <li>
+                            <a href="#" class="header__navs_link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__navs_link">Сертификаты</a>
+                        </li>
+                    </ul>
+                    <button class="header__bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+                    <a href="index.html" class="header__logo">
+                        <img src="./images/header-logo.svg" alt="">
+                    </a>
+                    <div class="header__networks">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/networks-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/networks-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/networks-3.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__btn">
+                            <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">заказать
+                                праздник</a>
+                        </div>
+                        <a href="#" class="header__contact">контакты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Modals -->
+        <!-- Mall modal -->
+        <section class="modal mall-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h2 class="title">
+                    <span class="text-gradient">В каком ТРЦ хотите развлечься?</span>
+                </h2>
+                <div class="btns">
+                    <button class="text-gradient">ТРЦ «Новомосковский»</button>
+                    <button class="text-gradient">ТРЦ «Фестиваль»</button>
+                </div>
+                <img src="./images/mall-modal-bg.png" alt="" class="main-img">
+            </div>
+        </section>
+        <!-- Mall modal end -->
+        <!-- New Modal -->
+        <section class="modal events-modal" id="events-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="Закрыть">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите торговый центр</span>
+                </h2>
+                <div class="modal__links" style="display: flex; flex-direction: column; margin-top: 15%;">
+                    <a href="./events-novomoscow.html" class="modal__link" style="font-size: 20px;">ТРЦ
+                        «Новомосковский»</a>
+                    <a href="./events.html" class="modal__link" style="font-size: 20px; margin-top: 5%;">ТРЦ
+                        «Фестиваль»</a>
+                </div>
+            </div>
+        </section>
+        <!-- New Modal -->
+        <!-- Great modal -->
+        <section class="modal great-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Отлично!</span>
+                </h2>
+                <p class="text-gradient">Наш менеджер свяжется с вами в ближайшее время</p>
+                <img src="./images/great-modal-bg.png" class="main-img" alt="">
+            </div>
+        </section>
+        <!-- Great modal end -->
+
+        <!-- Booking modal -->
+        <section class="modal network-modal booking-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ бронирования</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Booking modal end -->
+
+        <!-- Identify modal -->
+        <section class="modal network-modal identify-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ узнать подробней</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Identify modal end -->
+
+        <!-- More modal -->
+        <section class="modal network-modal more-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ <br> узнать подробнее</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- More modal end -->
+
+        <!-- Purchase modal -->
+        <section class="modal network-modal purchase-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ покупки</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Purchase modal end -->
+
+        <!-- Phone modal -->
+        <section class="modal call-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <a href="te:+79774776999" class="text-gradient">+7 977 477-69-99</a>
+            </div>
+        </section>
+        <!-- Phone modal end -->
+        <!-- Modals end -->
+
+        <main>
+
+            <!-- Breadcrumbs -->
+            <section class="breadcrumb">
+                <ul class="container breadcrumb__container">
+                    <li>
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="dots"></li>
+                    <li>
+                        <span>FAQ</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- Breadcrumbs end -->
+
+            <section class="faq">
+                <div class="container faq__container">
+                    <h2 class="faq__title">
+                        <span class="text-gradient">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</span>
+                        <span class="text-gradient">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</span>
+                    </h2>
+                    <ul class="accordion">
+                        <li class="accordion__item">
+                            <button class="accordion__btn">
+                                <span class="text-gradient">СЛОЖНО ЛИ УПРАВЛЯТЬ КАРТОМ?</span>
+                                <img src="./images/accordion-btn.svg" alt="">
+                            </button>
+                            <p>Нет, карт управляться рулем, в движение его приводит педаль газа.</p>
+                        </li>
+                        <li class="accordion__item">
+                            <button class="accordion__btn">
+                                <span class="text-gradient">С КАКОГО И ДО КАКОГО ВОЗРАСТА ДЕТИ ДОПУСКАЮТСЯ НА
+                                    ПРОКАТ?</span>
+                                <img src="./images/accordion-btn.svg" alt="">
+                            </button>
+                            <p>Прокат открыт для детей с 3 лет, далее ограничений по возрасту нет, главное чтобы человек
+                                весил менее 90 кг.</p>
+                        </li>
+                        <li class="accordion__item">
+                            <button class="accordion__btn">
+                                <span class="text-gradient">МОГУ ЛИ Я ПРОКАТИТЬСЯ С РЕБЕНКОМ?</span>
+                                <img src="./images/accordion-btn.svg" alt="">
+                            </button>
+                            <p>Вы можете прокатиться сами или с ребенком вместе, если вес не превышает 90 кг.</p>
+                        </li>
+                        <li class="accordion__item">
+                            <button class="accordion__btn">
+                                <span class="text-gradient">НА ВАШИХ МАШИНКАХ БЕЗОПАСНО?</span>
+                                <img src="./images/accordion-btn.svg" alt="">
+                            </button>
+                            <p>
+                                Да, конечно! Машинки имеют специальную конструкцию, которая защищена от переворотов, а
+                                помимо этого: <br>
+                                1) Опытный инструктор проведет инструктаж и наденет шлем; <br>
+                                2) Машинки оборудованы ремнем безопасности; <br>
+                                3) Машинка имеет педаль тормоза и при необходимости ребенок остановится <br>
+                                4) Контроль за безопасным катанием обеспечат инструкторы
+                            </p>
+                        </li>
+                    </ul>
+                    <img src="./images/faq-bg.png" alt="" class="faq__bg">
+                    <img src="./images/faq-bg-md.png" alt="" class="faq__bg md">
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="./images/footer-bg.png" alt="" class="footer__bg">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <div class="footer__network">
+                        <ul class="footer__network_item">
+                            <li>
+                                <h3>SUPER CART</h3>
+                                <ul>
+                                    <li>
+                                        <a href="./about.html">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.html">Частые вопросы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>БРОНИРОВАНИЕ</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Устроить праздник</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Купить сертификат</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Развлечься</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="/" class="footer__logo">
+                            <img src="./images/header-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__form">
+                        <h3>Остались вопросы?</h3>
+                        <form action="send_mail.php" method="post">
+                            <input type="text" class="text-gradient" name="fullname" placeholder="ФИО" required>
+                            <input type="text" class="text-gradient" name="phone" placeholder="номер телефона" required>
+                            <div class="inp-radio">
+                                <label for="footerRadio1">
+                                    <input type="radio" checked name="eventType" value="детский праздник"
+                                        id="footerRadio1">
+                                    <span>детский праздник</span>
+                                </label>
+                                <label for="footerRadio2">
+                                    <input type="radio" name="eventType" value="развлечения" id="footerRadio2">
+                                    <span>развлечения</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="footerCheckbox" name="consent" required>
+                                <label for="footerCheckbox">Согласен на обработку персональных данных</label>
+                            </div>
+                            <button type="submit" class="btn-gradient">Забронировать</button>
+                        </form>
+                    </div>
+                    <div class="footer__map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3cd946a8ba2e60ca50c1ee5b492e5ab8f57ea711cecbc36e8125176f88c5a60&amp;source=constructor"
+                            width="500" height="400" frameborder="0"></iframe>
+                        <ul>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                                    <img src="./images/networks-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vk.com/super.cart" target="_blank">
+                                    <img src="./images/networks-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+79774776999">
+                                    <img src="./images/networks-3.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copy_right">© 2024. Super Cart</p>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

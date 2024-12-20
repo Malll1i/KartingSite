@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./scss/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__in">
+                <div class="container header__container">
+                    <ul class="header__navs">
+                        <li>
+                            <a href="#" class="header__navs_link" id="events-link">Мероприятия</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="header__navs_link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="./certificate.html" class="header__navs_link">Сертификаты</a>
+                        </li>
+                    </ul>
+                    <button class="header__bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+                    <a href="index.html" class="header__logo">
+                        <img src="./images/header-logo.svg" alt="">
+                    </a>
+                    <div class="header__networks">
+                        <ul>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                                    <img src="./images/networks-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vk.com/super.cart" target="_blank">
+                                    <img src="./images/networks-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+79774776999">
+                                    <img src="./images/networks-3.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__btn">
+                            <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">заказать
+                                праздник</a>
+                        </div>
+                        <a href="#" class="header__contact">контакты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Modals -->
+        <!-- Mall modal -->
+        <section class="modal mall-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <h2 class="title">
+                    <span class="text-gradient">В каком ТРЦ хотите развлечься?</span>
+                </h2>
+                <div class="btns">
+                    <button class="text-gradient">ТРЦ «Новомосковский»</button>
+                    <button class="text-gradient">ТРЦ «Фестиваль»</button>
+                </div>
+                <img src="./images/mall-modal-bg.png" alt="" class="main-img">
+            </div>
+        </section>
+        <!-- Mall modal end -->
+
+        <!-- Great modal -->
+        <section class="modal great-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Отлично!</span>
+                </h2>
+                <p class="text-gradient">Наш менеджер свяжется с вами в ближайшее время</p>
+                <img src="./images/great-modal-bg.png" class="main-img" alt="">
+            </div>
+        </section>
+        <!-- Great modal end -->
+
+        <!-- Booking modal -->
+        <section class="modal network-modal booking-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ бронирования</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Booking modal end -->
+        <!-- New Modal -->
+        <section class="modal events-modal" id="events-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="Закрыть">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите торговый центр</span>
+                </h2>
+                <div class="modal__links" style="display: flex; flex-direction: column; margin-top: 15%;">
+                    <a href="./events-novomoscow.html" class="modal__link" style="font-size: 20px;">ТРЦ
+                        «Новомосковский»</a>
+                    <a href="./events.html" class="modal__link" style="font-size: 20px; margin-top: 5%;">ТРЦ
+                        «Фестиваль»</a>
+                </div>
+            </div>
+        </section>
+        <!-- New Modal -->
+         <!-- хз модалка -->
+        <section class="modal details-modal" id="details-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="Закрыть">
+                </button>
+                <h2 class="title">
+                    <h2 class="text-gradient">Примеры пакетов</h2>
+                </h2>
+                <div class="modal__text">
+                    <h3 style="margin-top: 2%;">Начало в 12:00</h3>
+                    <ul style="padding: 10px;">
+                        <li>12:00 анимационная программа</li>
+                        <li>13:00 развлечения парка</li>
+                        <li>14:00 банкетная часть</li>
+                    </ul>
+                    <h2 class="text-gradient">Примеры с шоу</h2>
+                    <h3 style="margin-top: 2%;">Начало в 12:00</h3>
+                    <ul style="padding: 10px;">
+                        <li>12:00 анимационная часть</li>
+                        <li>13:00 развлечения парка</li>
+                        <li>14:00 банкетная часть</li>
+                        <li>15:00 шоу</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- хз модалка -->
+        <!-- Identify modal -->
+        <section class="modal network-modal identify-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ узнать подробней</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient"> написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Identify modal end -->
+
+        <!-- More modal -->
+        <section class="modal network-modal more-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ <br> узнать подробнее</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- More modal end -->
+
+        <!-- Purchase modal -->
+        <section class="modal network-modal purchase-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <h2 class="title">
+                    <span class="text-gradient">Выберите способ покупки</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                            <img src="./images/networks-1.svg" alt="">
+                            <span class="text-gradient">написать <br> WhatsApp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/super.cart" target="_blank">
+                            <img src="./images/networks-2.svg" alt="">
+                            <span class="text-gradient">написать <br> ВКонтакте</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+79774776999">
+                            <img src="./images/networks-3.svg" alt="">
+                            <span class="text-gradient">позвонить</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Purchase modal end -->
+
+        <!-- Phone modal -->
+        <section class="modal call-modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <button class="modal__close">
+                    <img src="./images/times.svg" alt="">
+                </button>
+                <a href="te:+79774776999" class="text-gradient">+7 977 477-69-99</a>
+            </div>
+        </section>
+        <!-- Phone modal end -->
+        <!-- Modals end -->
+
+        <main>
+
+            <!-- Home -->
+            <section class="home">
+                <img src="./images/home-bg.png" alt="" class="home__bg">
+                <img src="./images/home-bg-2.png" alt="" class="home__bg-2">
+                <img src="./images/home-bg-2-md.png" alt="" class="home__bg-2 md">
+                <div class="container home__container">
+                    <img src="./images/home-card.png" alt="" class="home__card">
+                    <img src="./images/home-card-sm.png" alt="" class="home__card sm">
+                    <div class="home__select b-gradient">
+                        <h3 class="title text-gradient">Выберите ТРЦ</h3>
+                        <div class="select">
+                            <button class="select_btn b-gradient">
+                                <span class="text-gradient">торговый центр</span>
+                                <img src="./images/arrow-bottom.svg" alt="">
+                            </button>
+                            <ul class="select_list b-gradient">
+                                <li>
+                                    <a href="./festival-analogue.html">
+                                        <span>ТРЦ «Новомосковский»</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./festival.html">
+                                        <span>ТРЦ «Фестиваль»</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="home__title text-gradient">Хотите разлечься <br> или устроить ребенку незабываемый
+                            праздник?</h2>
+                        <div class="home__btn">
+                            <a href="#fix1" class="btn_yellow ">заказать праздник</a>
+                            <a href="#fix2" class="btn_bordered ">развлечения</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home end -->
+
+            <!-- Example -->
+            <section class="example">
+                <div class="container example__container">
+                    <div class="sec-line">
+                        <p class="sec-line__text text-gradient" id="fix2">Развлечения</p>
+                        <div class="sec-line__img">
+                            <img src="./images/line.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="example__content">
+                        <div class="example__card">
+                            <div class="example__card_content">
+                                <div class="text-wrap">
+                                    <div class="text">
+                                        <div class="active">
+                                            <h3 class="text-gradient">ДРИФТ КАРТИНГ</h3>
+                                            <h4 class="text-gradient">Будние дни:</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">7 минут</span>
+                                                    <span class="text-gradient">550₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">14 минут</span>
+                                                    <span class="text-gradient">950₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">21 минута</span>
+                                                    <span class="text-gradient">1400₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-gradient">Выходные и праздничные дни:</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">7 минут</span>
+                                                    <span class="text-gradient">650₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">14 минут</span>
+                                                    <span class="text-gradient">1150₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">21 минута</span>
+                                                    <span class="text-gradient">1700₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                <button class="navigation_btn">
+                                    <img src="./images/swp-next-btn.svg" alt="">
+                                </button>
+                                <img src="./images/example-content-card-1.png" alt="">
+                            </div>
+                            <div class="example__card_swp">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-1-1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-1-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-1-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swp_btn">
+                                    <button class="swp_btn__prev">
+                                        <img src="./images/swp-prev-btn.svg" alt="">
+                                    </button>
+                                    <button class="swp_btn__next">
+                                        <img src="./images/swp-next-btn.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example__card">
+                            <div class="example__card_swp">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-2-1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-2-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-2-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swp_btn">
+                                    <button class="swp_btn__prev">
+                                        <img src="./images/swp-prev-btn.svg" alt="">
+                                    </button>
+                                    <button class="swp_btn__next">
+                                        <img src="./images/swp-next-btn.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="example__card_content">
+                                <div class="text-wrap">
+                                    <div class="text">
+                                        <div class="active">
+                                            <h3 class="text-gradient">VR - атракцион</h3>
+                                            <h4 class="text-gradient">Будний/выходной</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">1 игра</span>
+                                                    <span class="text-gradient">550₽/600₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">2 игры</span>
+                                                    <span class="text-gradient">950₽/1000₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-gradient">VR - шлем oculus 3</h3>
+                                            <h4 class="text-gradient">Будний/выходной</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">15 минут</span>
+                                                    <span class="text-gradient">400₽/500₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">30 минут</span>
+                                                    <span class="text-gradient">650₽/800₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">60 минут</span>
+                                                    <span class="text-gradient">1200₽/1400₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                <button class="navigation_btn">
+                                    <img src="./images/swp-next-btn.svg" alt="">
+                                </button>
+                                <img src="./images/example-content-card-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="example__card">
+                            <div class="example__card_content">
+                                <div class="text-wrap">
+                                    <div class="text">
+                                        <div class="active">
+                                            <h3 class="text-gradient">тир</h3>
+                                            <h4 class="text-gradient">Будние дни:</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">1 игра</span>
+                                                    <span class="text-gradient">450₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">2 игры</span>
+                                                    <span class="text-gradient">750₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">Super игра</span>
+                                                    <span class="text-gradient">850₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-gradient">Выходные и праздничные дни:</h4>
+                                            <ul>
+                                                <li>
+                                                    <span class="text-gradient">1 игра</span>
+                                                    <span class="text-gradient">550₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">2 игры</span>
+                                                    <span class="text-gradient">850₽</span>
+                                                </li>
+                                                <li>
+                                                    <span class="text-gradient">Super игра</span>
+                                                    <span class="text-gradient">900₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                <button class="navigation_btn">
+                                    <img src="./images/swp-next-btn.svg" alt="">
+                                </button>
+                                <img src="./images/example-content-card-3.png" alt="">
+                            </div>
+                            <div class="example__card_swp">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-3-1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-3-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/example-card-3-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swp_btn">
+                                    <button class="swp_btn__prev">
+                                        <img src="./images/swp-prev-btn.svg" alt="">
+                                    </button>
+                                    <button class="swp_btn__next">
+                                        <img src="./images/swp-next-btn.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Example end -->
+
+            <!-- Tarif -->
+            <section class="tarif tarif-sec">
+                <div class="container tarif__container">
+                    <div class="sec-line">
+                        <p class="sec-line__text text-gradient">дни рождения</p>
+                        <div class="sec-line__img">
+                            <img src="./images/line.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tarif__card card-1">
+                                    <div class="tarif__card_left">
+                                        <img src="./images/tarif-card-bg-1-1.png" alt="" class="bg-img">
+                                        <h4 class="text-gradient">ТАРИФ</h4>
+                                        <h3 class="text-gradient">«ПРАЗДНИК»</h3>
+                                        <h5 class="text-gradient">длительность - 40 минут</h5>
+                                        <ul>
+                                            <li>
+                                                <h4 class="text-gradient">Будние дни</h4>
+                                                <h3 class="text-gradient">10.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 1.500)</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-gradient">Выходные дни</h4>
+                                                <h3 class="text-gradient">12.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 2.000₽)</p>
+                                            </li>
+                                        </ul>
+                                        <img class="main-img" src="./images/tarif-card-1-1.png" alt="">
+                                        <div class="swp_btn">
+                                            <button class="swp_btn__prev">
+                                                <img src="./images/swp-prev-btn.svg" alt="">
+                                            </button>
+                                            <button class="swp_btn__next">
+                                                <img src="./images/swp-next-btn.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tarif__card_right">
+                                        <h3 class="text-gradient">что входит:</h3>
+                                        <ul>
+                                            <li class="text-gradient">// Картинг - 21 минута</li>
+                                            <li class="text-gradient">// Тир - 1 игра</li>
+                                            <li class="text-gradient">// VR - 1 игра</li>
+                                        </ul>
+                                        <div class="btns">
+                                            <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                            <a href="#" class="btn_yellow details-link">подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarif__card card-2 text-right">
+                                    <div class="tarif__card_left">
+                                        <img src="./images/tarif-card-bg-1-2.png" alt="" class="bg-img">
+                                        <h4 class="text-gradient">ТАРИФ</h4>
+                                        <h3 class="text-gradient">«super ПРАЗДНИК»</h3>
+                                        <h5 class="text-gradient">длительность - 2 часа</h5>
+                                        <ul>
+                                            <li>
+                                                <h4 class="text-gradient">Будние дни</h4>
+                                                <h3 class="text-gradient">15.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 1.500)</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-gradient">Выходные дни</h4>
+                                                <h3 class="text-gradient">18.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 2.000₽)</p>
+                                            </li>
+                                        </ul>
+                                        <img class="main-img" src="./images/tarif-card-1-2.png" alt="">
+                                        <div class="swp_btn">
+                                            <button class="swp_btn__prev">
+                                                <img src="./images/swp-prev-btn.svg" alt="">
+                                            </button>
+                                            <button class="swp_btn__next">
+                                                <img src="./images/swp-next-btn.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tarif__card_right">
+                                        <h3 class="text-gradient">что входит:</h3>
+                                        <ul>
+                                            <li class="text-gradient">// Картинг - 21 минута</li>
+                                            <li class="text-gradient">// Тир - 1 игра</li>
+                                            <li class="text-gradient">// VR - 1 игра</li>
+                                            <li class="text-yellow">// Аниматор - 1 час</li>
+                                        </ul>
+                                        <div class="btns">
+                                            <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                            <a href="#" class="btn_yellow details-link">подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarif__card card-3">
+                                    <div class="tarif__card_left">
+                                        <img src="./images/tarif-card-bg-1-3.png" alt="" class="bg-img">
+                                        <h4 class="text-gradient">ТАРИФ</h4>
+                                        <h3 class="text-gradient">«mega ПРАЗДНИК»</h3>
+                                        <h5 class="text-gradient">длительность - 3 часа</h5>
+                                        <ul>
+                                            <li>
+                                                <h4 class="text-gradient">Будние дни</h4>
+                                                <h3 class="text-gradient">21.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 1.500)</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-gradient">Выходные дни</h4>
+                                                <h3 class="text-gradient">25.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 2.000₽)</p>
+                                            </li>
+                                        </ul>
+                                        <img class="main-img" src="./images/tarif-card-1-3.png" alt="">
+                                        <div class="swp_btn">
+                                            <button class="swp_btn__prev">
+                                                <img src="./images/swp-prev-btn.svg" alt="">
+                                            </button>
+                                            <button class="swp_btn__next">
+                                                <img src="./images/swp-next-btn.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tarif__card_right">
+                                        <h3 class="text-gradient">что входит:</h3>
+                                        <ul>
+                                            <li class="text-gradient">// Картинг - 21 минута</li>
+                                            <li class="text-gradient">// Тир - 1 игра</li>
+                                            <li class="text-gradient">// VR - 1 игра</li>
+                                            <li class="text-yellow">// Аниматор - 1 час</li>
+                                            <li class="text-yellow">// Шарики</li>
+                                            <li class="text-yellow">// Фотограф</li>
+                                            <li class="text-yellow">// Сервированный стол</li>
+                                        </ul>
+                                        <div class="btns">
+                                            <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                            <a href="#" class="btn_yellow details-link">подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarif__card card-4 text-right">
+                                    <div class="tarif__card_left">
+                                        <img src="./images/tarif-card-bg-1-4.png" alt="" class="bg-img">
+                                        <h4 class="text-gradient">ТАРИФ</h4>
+                                        <h3 class="text-gradient">«maxi ПРАЗДНИК»</h3>
+                                        <h5 class="text-gradient">длительность - 3 часа</h5>
+                                        <ul>
+                                            <li>
+                                                <h4 class="text-gradient">Будние дни</h4>
+                                                <h3 class="text-gradient">15.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 1.500)</p>
+                                            </li>
+                                            <li>
+                                                <h4 class="text-gradient">Выходные дни</h4>
+                                                <h3 class="text-gradient">20.000₽</h3>
+                                                <p class="text-gradient">6 детей (+1 ребенок - 2.000₽)</p>
+                                            </li>
+                                        </ul>
+                                        <img class="main-img" src="./images/tarif-card-1-4.png" alt="">
+                                        <div class="swp_btn">
+                                            <button class="swp_btn__prev">
+                                                <img src="./images/swp-prev-btn.svg" alt="">
+                                            </button>
+                                            <button class="swp_btn__next">
+                                                <img src="./images/swp-next-btn.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tarif__card_right">
+                                        <h3 class="text-gradient">что входит:</h3>
+                                        <ul>
+                                            <li class="text-yellow"><span class="text-gradient">// Картинг -</span>
+                                                безлимит</li>
+                                            <li class="text-yellow"><span class="text-gradient">// Тир -</span> безлимит
+                                            </li>
+                                            <li class="text-yellow"><span class="text-gradient">// VR -</span> безлимит
+                                            </li>
+                                            <li class="text-yellow">// Аниматор - 1 час</li>
+                                            <li class="text-yellow">// Шарики</li>
+                                            <li class="text-yellow">// Фотограф</li>
+                                            <li class="text-yellow">// Сервированный стол</li>
+                                        </ul>
+                                        <div class="btns">
+                                            <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                            <a href="#" class="btn_yellow details-link">подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tarif__card card-1">
+                                    <div class="tarif__card_left">
+                                        <img src="./images/tarif-card-bg-1-1.png" alt="" class="bg-img">
+
+                                        <h3 class="text-gradient" style="text-align: center;">Дополнительные услуги</h3>
+                                        <br>
+                                        <ul>
+                                            <li id="fix1">
+                                                <h3 class="text-gradient">Анимационные программы</h3> <br>
+                                                <h3 class="text-gradient">Шоу мыльных пузырей</h3><br>
+                                                <h3 class="text-gradient">Шоу-программы</h3><br>
+                                                <h3 class="text-gradient">Мастер-классы</h3><br>
+                                                <h3 class="text-gradient">Бумажное шоу</h3><br>
+                                                <h3 class="text-gradient">Аквагрим</h3><br>
+                                                <h3 class="text-gradient">Фотограф</h3><br>
+                                                <h3 class="text-gradient">Квесты</h3><br>
+                                            </li>
+                                        </ul>
+
+                                        <div class="swp_btn">
+                                            <button class="swp_btn__prev">
+                                                <img src="./images/swp-prev-btn.svg" alt="">
+                                            </button>
+                                            <button class="swp_btn__next">
+                                                <img src="./images/swp-next-btn.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="tarif__card_right">
+                                        <div class="btns" style="margin-top: 90%;">
+                                            <a href="#" class="btn-gradient booking-modal__open">забронировать</a>
+                                            <a href="#" class="btn_yellow booking-modal__open">подробней</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tarif end -->
+
+            <!-- Reviews -->
+            <section class="review">
+                <div class="container review__container">
+                    <div class="sec-line">
+                        <p class="sec-line__text text-gradient">Отзывы</p>
+                        <div class="sec-line__img">
+                            <img src="./images/line.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Сергей У.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Анатолий И.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Елена С.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Сергей У.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Анатолий И.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review__card">
+                                    <div class="review__card_stars">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                    <h3 class="text-gradient">Елена С.</h3>
+                                    <p class="text-gradient">Мероприятие прошло очень классно, аниматор отработал на
+                                        “Ура”, обстановка и развлечения очень понравились детям, так что в следующий раз
+                                        обязательно будем заказывать праздник в Super Cart. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swp_btn">
+                        <button class="swp_btn__prev">
+                            <img src="./images/swp-prev-btn.svg" alt="">
+                        </button>
+                        <button class="swp_btn__next">
+                            <img src="./images/swp-next-btn.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Reviews end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="./images/footer-bg.png" alt="" class="footer__bg">
+            <div class="container footer__container">
+                <div class="footer__content">
+                    <div class="footer__network">
+                        <ul class="footer__network_item">
+                            <li>
+                                <h3>SUPER CART</h3>
+                                <ul>
+                                    <li>
+                                        <a href="./about.html">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.html">Частые вопросы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>БРОНИРОВАНИЕ</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Устроить праздник</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Купить сертификат</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Развлечься</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="/" class="footer__logo">
+                            <img src="./images/header-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__form">
+                        <h3>Остались вопросы?</h3>
+                        <form action="send_mail.php" method="post">
+                            <input type="text" class="text-gradient" name="fullname" placeholder="ФИО" required>
+                            <input type="text" class="text-gradient" name="phone" placeholder="номер телефона" required>
+                            <div class="inp-radio">
+                                <label for="footerRadio1">
+                                    <input type="radio" checked name="eventType" value="детский праздник"
+                                        id="footerRadio1">
+                                    <span>детский праздник</span>
+                                </label>
+                                <label for="footerRadio2">
+                                    <input type="radio" name="eventType" value="развлечения" id="footerRadio2">
+                                    <span>развлечения</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="footerCheckbox" name="consent" required>
+                                <label for="footerCheckbox">Согласен на обработку персональных данных</label>
+                            </div>
+                            <button type="submit" class="btn-gradient">Забронировать</button>
+                        </form>
+                    </div>
+                    <div class="footer__map" id="fix2">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3cd946a8ba2e60ca50c1ee5b492e5ab8f57ea711cecbc36e8125176f88c5a60&amp;source=constructor"
+                            width="500" height="400" frameborder="0"></iframe>
+                        <ul>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=79774776999" target="_blank">
+                                    <img src="./images/networks-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://vk.com/super.cart" target="_blank">
+                                    <img src="./images/networks-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+79774776999">
+                                    <img src="./images/networks-3.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copy_right">© 2024. Super Cart</p>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
